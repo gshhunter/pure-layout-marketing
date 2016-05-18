@@ -98,8 +98,15 @@ a.pure-button-primary {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
+.header {
+    position: absolute;
+    /*height: 50px;*/
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 .home-menu {
-    padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
@@ -177,8 +184,24 @@ a.pure-button-primary {
 
 /* This is the class used for the footer */
 .footer {
+    position: absolute;
+    /*height: 50px;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: #111;
-    
+}
+
+
+/* This is the class used for content */
+
+.content {
+    position: absolute;
+    top: 50px;
+    left:0;
+    bottom: 50px;
+    width: 100%;
+    background: #FFFFFF;
 }
 
 /*
@@ -193,9 +216,9 @@ a.pure-button-primary {
         font-size: 16px;
     }
     /* We want to give the content area some more padding */
-    .content {
+    /*.content {
         padding: 1em;
-    }
+    }*/
 
     /* We can align the menu header to the left, but float the
     menu items to the right. */
@@ -242,10 +265,4 @@ a.pure-button-primary {
     }
 }
 
-/*
- * -- FOOTER STYLE --
- *
- *
- */
- 
  
