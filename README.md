@@ -15,4 +15,8 @@ See the [LICENSE file][] for license text and copyright information.
 
 [LICENSE file]: https://github.com/yahoo/pure-site/blob/master/LICENSE.md
 
+<<<<<<< HEAD
 Simon, can you view now?
+=======
+from XLK!
+>>>>>>> origin/master
