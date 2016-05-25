@@ -21,7 +21,3 @@ yes.
 alright.
 
 No thnaks!!
-
-frmo tracy.
-hello tracy.
-hello tracy from gsh
