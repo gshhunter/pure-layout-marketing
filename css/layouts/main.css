@@ -37,6 +37,10 @@ label {
     padding: 1em;
 }
 
+.l-box-sm {
+    padding: 15px;
+}
+
 .l-box-lrg {
     padding: 1em;
     border-bottom: 1px solid rgba(0,0,0,0.1);

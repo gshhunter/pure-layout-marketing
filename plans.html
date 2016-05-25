@@ -2,36 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Home Page of Studying Abroad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page of Studying Abroad">
 
     <title>我要留学</title>
 
     
-
-
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-
-
-
-<!--[if lte IE 8]>
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-  
-<![endif]-->
-<!--[if gt IE 8]><!-->
-  
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-  
-<!--<![endif]-->
-
-
-
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-
-
-  
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
     <![endif]-->
@@ -39,22 +25,21 @@
         <link rel="stylesheet" href="css/layouts/marketing.css">
     <!--<![endif]-->
   
-
-
+<style>
+    /*.pure-g {
+        position: relative;
+        left: 10%;
+    }
     
-
+    button {
+        position: relative;
+        left: 35%;
+       
+    }*/
+</style>
     
-
 </head>
 <body>
-
-
-
-
-
-
-
-
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
@@ -73,11 +58,11 @@
         <img src="img/bg1.jpg" />
     </div>-->
     <div class="splash">
-        <h1 class="splash-head">成为留学顾问</h1>
-        <p class="splash-subhead">
+        <h1 class="splash-head">图片</h1>
+        <!--<p class="splash-subhead">
             提供专业留学信息，自主选择留学服务
         </p>
-        <!--<p>
+        <p>
             <a href="#" class="pure-button pure-button-primary">我要留学</a>
         </p>-->
     </div>
@@ -85,73 +70,155 @@
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">开始申请</h2>
+        <h2 class="content-head is-center"><b>顾问申请表单</b></h2>
 
         <form class="pure-form pure-form-stacked">
             <fieldset>
-                
-                <div class="pure-g">
-                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <legend>个人信息</legend>
+                <div id="personal-info" class="pure-g">
+                    <!-- 1 -->
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
                         <label for="first-name">真实名</label>
-                        <input id="first-name" class="pure-u-1-12" type="text">
+                        <input id="first-name" class="pure-input-1" />
                     </div>
-                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
                         <label for="last-name">真实姓</label>
-                        <input id="last-name" class="pure-u-1-12" type="text">
+                        <input id="last-name" class="pure-input-1" />
                     </div>
-                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        <label for="certificate-id">执照ID</label>
-                        <input id="certificate-id" class="pure-u-1-12" type="text">
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
                     </div>
-                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        <label for="agency-type">顾问类型</label>
-                        <select id="agency-type" class="pure-input-1-2">
-                            <option>个人</option>
-                            <option>公司</option>
+                    
+                    <!-- 2 -->
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4" />
+                        <label for="birth-day">出生日期</label>
+                        <input id="birth-day" class="pure-input-1" />
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4" />
+                        <label for="email">联系电话</label>
+                        <input id="email" class="pure-input-1" />
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <!-- 3 -->
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <label for="country">所在国家</label>
+                        <select id="country" class="pure-input-1">
+                            <option>-- 请选择 --</option>
+                            <option>中国</option>
+                            <option>澳大利亚</option>
                         </select>
                     </div>
-                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <label for="province">所在省份</label>
+                        <select id="province" class="pure-input-1">
+                            <option>-- 请选择 --</option>
+                            <option>北京</option>
+                            <option>上海</option>
+                            <option>四川</option>
+                        </select>
                     </div>
-                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
                     </div>
+                    
+                    <!-- 4 -->
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <label for="address">详细地址</label>
+                        <input id="address" class="pure-input-1" />
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
                 </div>
             </fieldset>
+            
+            <fieldset>
+                <legend>顾问信息</legend>
+                <div class="pure-g">
+                    <!-- 1 -->
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <label for="agency-type">顾问类型</label>
+                        <select id="agency-type" class="pure-input-1">
+                            <option>-- 请选择 --</option>
+                            <option>从业顾问</option>
+                            <option>在校学生</option>
+                        </select>
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <label for="uni-name">毕业院校 / 在读学校</label>
+                        <input id="uni-name" class="pure-input-1" >
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <!-- 2 -->
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <label for="certificate-loc">顾问执照认证地</label>
+                        <select id="certificate-loc" class="pure-input-1">
+                            <option>-- 请选择 --</option>
+                            <option>澳洲</option>
+                            <option>中国</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <label for="certificate-id">顾问执照ID</label>
+                        <input id="certificate-id" class="pure-input-1" >
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <!-- 3 -->
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                        <button type="submit" class="pure-button pure-button-primary">提交申请</button>
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                    
+                    <div class="l-box-sm pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+                    </div>
+                </div>
+                
+                
+            </fieldset>
+            
+
         </form>
     </div>
-
-    <!--<div class="content">
-        <h2 class="content-head is-center">关注我们</h2>
-
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form">
-                    <fieldset class="pure-group">
-                        <label for="name">给我们留言</label>
-                        <input id="name" type="text" placeholder="发件人名称">
-                        <input id="email" type="email" placeholder="发件人邮箱">
-                    </fieldset>
-                    <fieldset class="pure-group">
-                        <input id="title" type="text" placeholder="邮件标题">
-                        <textarea id="e-content" placeholder="请输入邮件内容..." rows="5"></textarea>
-                    </fieldset>
-                     <button type="submit" class="pure-button">提交</button>
-                    
-                </form>
-            </div>
-
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4>联系我们</h4>
-                <p>公司邮箱：</p>
-                <p>公司电话：</p>
-                <p>公司地址：</p>
-                
-                <h4>更多信息</h4>
-                <p>人才招聘</p>
-                <p>更多帮助</p>
-            </div>
-        </div>
-
-    </div>-->
 
     <div class="footer l-box is-center">
         Malimaligong.com ®
@@ -159,10 +226,10 @@
 
 </div>
 
-
-
-
-
-
 </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#birth-day').datepicker();
+    });
+</script>
 </html>

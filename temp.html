@@ -39,26 +39,19 @@
         <link rel="stylesheet" href="css/layouts/marketing.css">
     <!--<![endif]-->
   
-
-
+<style>
+    .content {
+        padding: 75px;
+        
+    }
+</style>
     
-
-    
-
 </head>
 <body>
 
-
-
-
-
-
-
-
-
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="#">Logo</a>
+        <a class="pure-menu-heading" href="#">Logo（待确认）</a>
 
         <ul class="pure-menu-list">
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">成为留学顾问</a></li>
@@ -68,78 +61,48 @@
     </div>
 </div>
 
-<div class="splash-container">
-    <!--<div class="bg-img">
-        <img src="img/bg1.jpg" />
-    </div>-->
-    <div class="splash">
-        <h1 class="splash-head">澳洲留学</h1>
-        <p class="splash-subhead">
-            提供专业留学信息，自主选择留学服务
-        </p>
-        <p>
-            <a href="#" class="pure-button pure-button-primary">我要留学</a>
-        </p>
-    </div>
-</div>
-
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">留学服务</h2>
+        <h2 class="content-head is-center">开始申请</h2>
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    留学意愿
-                </h3>
-                <p>
-                    通过填写调查问卷，系统将根据申请条件自动匹配到合适的澳洲学校。
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-mobile"></i>
-                    留学查询
-                </h3>
-                <p>
-                    帮您找到详尽的澳洲留学信息，再也不怕被忽悠。
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large"></i>
-                    顾问推荐
-                </h3>
-                <p>
-                    帮助申请者推荐优秀的留学顾问，提升offer成功率。
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o"></i>
-                    流程跟踪
-                </h3>
-                <p>
-                    平台将会帮助申请者全程追踪留学申请，实时监控申请状态。
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img class="pure-img-responsive" alt="File Icons" width="300" src="img/common/file-icons.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-            <h2 class="content-head content-head-ribbon">申请指导</h2>
-
-            <p>
-                提供了2016年度全澳洲TOP30高校的入学申请要求，请点击左边文件下载链接查看
-            </p>
-        </div>
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                
+                <div class="pure-g">
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <label for="first-name">真实名</label>
+                        <input id="first-name" class="pure-input-1-2" type="text">
+                    </div>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <label for="last-name">真实姓</label>
+                        <input id="last-name" class="pure-input-1-2" type="text">
+                    </div>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <label for="agency-type">顾问类型</label>
+                        <select id="agency-type" class="pure-input-1-2">
+                            <option>-- 请选择 --</option>
+                            <option>个人</option>
+                            <option>公司</option>
+                        </select>
+                    </div>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <label for="certificate-id">顾问执照ID</label>
+                        <input id="certificate-id" class="pure-u-1-12" type="text">
+                    </div>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <label for="id-type">个人证件类型</label>
+                        <select id="id-type" class="pure-input-1-2">
+                            <option>-- 请选择 --</option>
+                            <option>身份证</option>
+                            <option>护照</option>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
 
     <div class="content">
@@ -186,6 +149,10 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
 </body>
 </html>
