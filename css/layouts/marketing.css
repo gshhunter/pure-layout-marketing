@@ -30,6 +30,24 @@ label {
 }
 
 /*
+ * -- photo layout --
+ *
+ */
+
+.photo-box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    text-align: center;
+}
+
+.photo-box img {
+    max-width: 100%;
+    height: auto;
+    min-height: 250px;
+}
+
+/*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
  */
